@@ -1,0 +1,29 @@
+[
+  {
+    "id": "625b04b0ea535019055cb185",
+    "index": 0,
+    "image": "./images/service-image/cat.jpg",
+    "ServiceName": "Odessa Blanchard",
+    "price": 459,
+    "description": "Exercitation nostrud mollit esse duis nulla exercitation aliqua pariatur aliquip quis consequat elit incididunt dolor. Ea aute adipisicing consectetur non voluptate fugiat. Sit amet irure minim fugiat voluptate sint velit sit magna eu.\r\n",
+    "ratings": 3
+  },
+  {
+    "id": "625b04b0318cabac8ded9f34",
+    "index": 1,
+    "image": "./images/service-image/dog.jpg",
+    "ServiceName": "Valentine Christensen",
+    "price": 461,
+    "description": "Lorem voluptate est non amet ex deserunt dolore sit reprehenderit aute excepteur. Nostrud est culpa anim pariatur incididunt labore ex reprehenderit tempor. Exercitation ullamco aliqua voluptate ut cillum consequat ex eu nulla ipsum. Adipisicing mollit exercitation do ullamco aliqua aliqua. Fugiat exercitation aliquip reprehenderit duis magna ex aliquip.\r\n",
+    "ratings": 5
+  },
+  {
+    "id": "625b04b0ccf2e1abcdbfda03",
+    "index": 2,
+    "image": "./images/service-image/parrot.jpg",
+    "ServiceName": "Blair Vincent",
+    "price": 163,
+    "description": "Esse voluptate eu ipsum nisi. Cillum sunt reprehenderit sint anim exercitation labore laboris irure. Esse proident eiusmod aute et nulla. Mollit sunt non ut nisi adipisicing.\r\n",
+    "ratings": 3
+  }
+]
