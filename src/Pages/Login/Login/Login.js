@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Login.css'
 
@@ -9,6 +9,21 @@ const Login = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const location = useLocation()
+    const navigate = useNavigate();
+    const from = location?.state?.from?.pathname || '/home'
+
+    if (user) {
+        navigate(from, { replace: true })
+    }
 
     //get data from email field
     const handleEmailField = event => {
@@ -19,12 +34,6 @@ const Login = () => {
         setPassword(event.target.value);
     }
 
-    const [
-        signInWithEmailAndPassword,
-        user,
-        loading,
-        error,
-    ] = useSignInWithEmailAndPassword(auth);
 
     const handleSignInUser = event => {
         event.preventDefault();
