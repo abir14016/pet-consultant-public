@@ -23,7 +23,7 @@ const SocialLogin = () => {
 
     const navigate = useNavigate()
     if (googleUser || githubUser || facebookUser) {
-        navigate('/')
+        navigate('/checkout')
     }
     return (
         <div>
