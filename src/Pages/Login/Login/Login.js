@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Login.css'
+import SocialLogin from './SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -19,7 +22,7 @@ const Login = () => {
 
     const location = useLocation()
     const navigate = useNavigate();
-    const from = location?.state?.from?.pathname || '/home'
+    const from = location?.state?.from?.pathname || '/'
 
     if (user) {
         navigate(from, { replace: true })
@@ -40,6 +43,16 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth)
+    const handleResetPassword = async () => {
+        if (email) {
+            await sendPasswordResetEmail(email)
+            toast("email sent")
+        }
+        else {
+            toast("Plz enter your email address")
+        }
+    }
 
     return (
         <div>
@@ -67,12 +80,15 @@ const Login = () => {
                     {
                         loading && <p>Loading...</p>
                     }
-                    <p>Don't have an account? <span className='text-danger'><Link className='register-link' to="/register">Please Register</Link></span></p>
                     <Button variant="primary" type="submit">
                         Log in
                     </Button>
+                    <p>Don't have an account? <span className='text-danger'><Link className='register-link' to="/register">Please Register</Link></span></p>
+                    <p>Forgot Password? <span className='text-danger'><button onClick={handleResetPassword} className='reset-button text-primary'>Reset Password</button></span></p>
                 </Form>
+                <SocialLogin></SocialLogin>
             </div>
+            <ToastContainer />
         </div>
     );
 };

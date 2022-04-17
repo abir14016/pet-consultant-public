@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import './Register.css'
+import SocialLogin from '../Login/SocialLogin/SocialLogin';
 
 const Register = () => {
     const [name, setName] = useState('')
@@ -16,7 +17,7 @@ const Register = () => {
         createUserWithEmailAndPassword,
         user,
         loading
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     //get data from name field
     const handleNameField = event => {
@@ -88,11 +89,11 @@ const Register = () => {
                     {
                         loading && <p>Loading...</p>
                     }
-
-                    <p>Already Registered? <span className='text-danger'><Link className='register-link' to="/login">Please Log in</Link></span></p>
                     <Button variant="primary" type="submit">
                         Register
                     </Button>
+                    <p>Already Registered? <span className='text-danger'><Link className='register-link' to="/login">Please Log in</Link></span></p>
+                    <SocialLogin></SocialLogin>
                 </Form>
             </div>
         </div>

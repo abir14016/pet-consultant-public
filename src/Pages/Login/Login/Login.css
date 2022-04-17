@@ -1,5 +1,10 @@
 .register-link {
   text-decoration: none;
-  color: orangered;
   font-size: 18px;
+}
+.reset-button {
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
 }
