@@ -75,7 +75,7 @@ const Login = () => {
                         user && <p style={{ color: "green" }}>Log in successful</p>
                     }
                     {
-                        error && <p>{error.message}</p>
+                        error && <p style={{ color: "red" }}>{error.message}</p>
                     }
                     {
                         loading && <p>Loading...</p>

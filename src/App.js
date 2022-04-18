@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
+import About from './Pages/About/About';
 import CheckOut from './Pages/CheckOut/CheckOut';
 import Home from './Pages/Home/Home/Home';
+import Reviews from './Pages/Home/Reviews/Reviews';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
@@ -18,6 +20,8 @@ function App() {
         <Route path='/checkout' element={<RequireAuth>
           <CheckOut></CheckOut>
         </RequireAuth>}></Route>
+        <Route path='/reviews' element={<Reviews></Reviews>}></Route>
+        <Route path='/aboutme' element={<About></About>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
