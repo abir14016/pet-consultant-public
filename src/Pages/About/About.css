@@ -1,0 +1,9 @@
+.abir-image {
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.skills img {
+  width: 50px;
+  margin: 0px 10px;
+}

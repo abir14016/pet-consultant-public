@@ -1,15 +1,15 @@
-.reviews {
+.blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 30px;
 }
 @media only screen and (max-width: 576px) {
-  .reviews {
+  .blogs {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
-  .reviews {
+  .blogs {
     grid-template-columns: repeat(2, 1fr);
   }
 }
