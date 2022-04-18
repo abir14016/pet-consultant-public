@@ -3,27 +3,27 @@
     "id": "625b04b0ea535019055cb185",
     "index": 0,
     "image": "./images/service-image/cat.jpg",
-    "serviceName": "Odessa Blanchard",
+    "serviceName": "Cats Deaseses solution",
     "price": 459,
-    "description": "Exercitation nostrud mollit esse duis nulla exercitation aliqua pariatur aliquip quis consequat elit incididunt dolor. Ea aute adipisicing consectetur non voluptate fugiat. Sit amet irure minim fugiat voluptate sint velit sit magna eu.\r\n",
+    "description": "As a cat parent, it is important to recognize the signs and symptoms of common illnesses so you can seek veterinary help for your feline friend in a timely manner if necessary. Read on for information about diseases and other medical inflictions that frequently impact cats.\r\n",
     "ratings": 3
   },
   {
     "id": "625b04b0318cabac8ded9f34",
     "index": 1,
     "image": "./images/service-image/dog.jpg",
-    "serviceName": "Valentine Christensen",
+    "serviceName": "Dogs Deaseses solution",
     "price": 461,
-    "description": "Lorem voluptate est non amet ex deserunt dolore sit reprehenderit aute excepteur. Nostrud est culpa anim pariatur incididunt labore ex reprehenderit tempor. Exercitation ullamco aliqua .\r\n",
+    "description": "The following is a list of the most common diseases to which your dog(s) may be exposed at a dog gathering. There may be specific risks in your area that are not listed. For more information about specific diseases in your area, consult your veterinarian.\r\n",
     "ratings": 5
   },
   {
     "id": "625b04b0ccf2e1abcdbfda03",
     "index": 2,
     "image": "./images/service-image/parrot.jpg",
-    "serviceName": "Blair Vincent",
+    "serviceName": "Parrots Deaseses solution",
     "price": 163,
-    "description": "Esse voluptate eu ipsum nisi. Cillum sunt reprehenderit sint anim exercitation labore laboris irure. Esse proident eiusmod aute et nulla. Mollit sunt non ut nisi adipisicing. Mollit sunt non ut nisi adipisicing.\r\n",
+    "description": "If you have read As Sick as a Parrot, it should be obvious that a large proportion of disease problems in parrots result from dietary and environmental influences. Infectious conditions are important, and will be covered in this section.\r\n",
     "ratings": 3
   }
 ]

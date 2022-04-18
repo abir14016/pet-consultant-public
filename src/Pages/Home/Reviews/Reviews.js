@@ -7,7 +7,7 @@ const Reviews = () => {
     const [users] = UseUsers()
     return (
         <div id='reviews' className="container">
-            <h1 className='text-center'>User About Our Products</h1>
+            <h1 className='text-center py-5'>User About My Services</h1>
             <hr />
             <div className='reviews'>
                 {

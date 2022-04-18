@@ -20,6 +20,7 @@ const Header = () => {
             <Container>
                 <Navbar.Brand as={Link} to="/">
                     <img className='brand-logo' src="images/logo/logo.png" alt="" />
+                    PET CONSULTANT
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -31,6 +32,7 @@ const Header = () => {
                         <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                     </Nav>
                     <Nav>
+                        <Nav.Link as={Link} to="/register">Register</Nav.Link>
                         {
                             user ?
                                 <button className='log-out-button' onClick={handleSignOut}>Log Out</button> :

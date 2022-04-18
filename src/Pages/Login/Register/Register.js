@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import './Register.css'
 import SocialLogin from '../Login/SocialLogin/SocialLogin';
 
 const Register = () => {
+
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -36,6 +37,13 @@ const Register = () => {
         setConfirmPassword(event.target.value);
     }
 
+    const location = useLocation()
+    const navigate = useNavigate();
+    const from = location?.state?.from?.pathname || '/'
+    if (user) {
+        navigate(from, { replace: true })
+    }
+
     const handleCreateUser = event => {
         event.preventDefault();
         if (password.length < 6) {
@@ -53,7 +61,8 @@ const Register = () => {
     }
     return (
         <div>
-            <div className='w-50 mx-auto form-container'>
+            <h1 className='text-center pt-5 text-primary'>WELCOME TO REGISTRATION PAGE</h1>
+            <div className='mx-auto form-container'>
                 <h2 className='text-center text-primary'>Please Register</h2>
                 <Form onSubmit={handleCreateUser}>
                     <Form.Group className="mb-3">

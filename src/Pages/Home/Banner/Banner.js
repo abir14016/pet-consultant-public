@@ -13,8 +13,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption className='text-black fw-bold'>
-                    <h1>First slide label</h1>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h1>Doctor Of Dogs</h1>
+                    <p>You can come to me to cure any deaseses of your dogs.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -25,8 +25,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption className='text-black fw-bold'>
-                    <h1>Second slide label</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1>Doctor Of Cats</h1>
+                    <p>You can come to me to cure any deaseses of your cats.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -37,8 +37,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption className='text-black fw-bold'>
-                    <h1>Third slide label</h1>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h1>Doctor Of Pets</h1>
+                    <p>You can come to me to cure any deaseses of your pets.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

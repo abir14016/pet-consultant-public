@@ -11,7 +11,7 @@ const CheckOut = () => {
     return (
         <div className='py-5'>
             <h1 className='text-center text-success'>Welcome to Checkout</h1>
-            <div className='w-50 mx-auto form-container'>
+            <div className='mx-auto form-container'>
                 <h1 className='text-center text-primary'>Please Checkout</h1>
                 <Form>
                     <Form.Group className="mb-3">

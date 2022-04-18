@@ -4,11 +4,11 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div class="footer-dark">
+        <div className="footer-dark mt-5">
             <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 item">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-3 item">
                             <Link className='footer-link' to="/services">Services</Link>
                             <ul>
                                 <li>Web Development</li>
@@ -16,7 +16,7 @@ const Footer = () => {
                                 <li>Hosting</li>
                             </ul>
                         </div>
-                        <div class="col-md-3 item">
+                        <div className="col-md-3 item">
                             <Link className='footer-link' to="/reviews">Reviews</Link>
                             <ul>
                                 <li>Company</li>
@@ -24,7 +24,7 @@ const Footer = () => {
                                 <li>Careers</li>
                             </ul>
                         </div>
-                        <div class="col-md-3 item">
+                        <div className="col-md-3 item">
                             <Link className='footer-link' to="/aboutme">About</Link>
                             <ul>
                                 <li>Company</li>
@@ -32,7 +32,7 @@ const Footer = () => {
                                 <li>Careers</li>
                             </ul>
                         </div>
-                        <div class="col-md-3 item text">
+                        <div className="col-md-3 item text">
                             <Link className='footer-link' to="/blogs">Blogs</Link>
                             <p>You can go through my blog at any time you want</p>
                         </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                             <a href="https://www.instagram.com/abir14016/?hl=en"><img src="images/social-logo/instagram-logo.png" alt="" /></a>
                         </div>
                     </div>
-                    <p class="copyright">Pet-consultant.com@2022</p>
+                    <p className="copyright">Pet-consultant.com@2022</p>
                 </div>
             </footer>
         </div>
