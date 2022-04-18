@@ -56,7 +56,7 @@ const Login = () => {
 
     return (
         <div>
-            <h1 className='text-center pt-5 text-primary'>WELCOME TO LOGIN PAGE</h1>
+            <h1 className='text-center pt-5 text-primary'>WELCOME TO LOG IN PAGE</h1>
             <div className='mx-auto form-container'>
                 <h2 className='text-center text-primary'>Please Log in</h2>
                 <Form onSubmit={handleSignInUser}>
