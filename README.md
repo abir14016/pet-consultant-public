@@ -12,6 +12,9 @@ Website Link: [Pet-Consultant](https://remarkable-cassata-77c698.netlify.app/).
 
 ## About This project:
 
+- It’s a website for pet consultant who wants to give service individually
+- There are 4 ways of (login) authentication system like google, facebook, github and email
+- There are some protected routes for unauthorized users.
 - This is a pet consultant website
 - I care about all pet animals
 - Anyone can come to me with his/her pets
